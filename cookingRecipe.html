@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Keeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Recipe Keeper</h1>
+
+            <h2>Add Recipe</h2>
+            <form id="recipe-form">
+                <!-- Recipe Image -->
+                <label for="recipeImage">Recipe Image URL:</label>
+                <input type="url" id="recipeImage" name="recipeImage" placeholder="http://example.com/my-dish.jpg">
+                <br><br>
+                <!-- Recipe Name -->
+                <label for="recipeName">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipeName" required><br><br>
+
+                <!-- Ingredients -->
+                <label for="ingredients">Ingredients:</label><br>
+                <textarea id="ingredients" name="ingredients" placeholder="List ingredients separated by commas" required></textarea><br><br>
+
+                <!-- Steps/Method -->
+                <label for="steps">Steps/Method:</label><br>
+                <textarea id="steps" name="steps" placeholder="Steps for preparation" required></textarea><br><br>
+
+                <!-- Submit Button -->
+                <button class="btn-add-recipe" type="submit" name="addRecipe">Add Recipe</button>
+            </form>
+        </div>
+
+        <div class="recipe-container">
+            <h2>Your Recipes</h2>
+            <div id="display-area">
+                <!-- Recipes will appear here -->
+            </div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
